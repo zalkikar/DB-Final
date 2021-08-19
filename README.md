@@ -5,7 +5,12 @@ Final Project for CSCI-GA.2433 Database Systems at NYU
 ![Alt text](chat_demo.gif)
 
 ## Start Rust server
+Install Rust with rustup: ```curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh```
+
+Then:
+
 ``` cargo build ```
+
 ``` cargo run ```
 
 For example, send GET request (empty body) to:
@@ -26,3 +31,16 @@ You will get response:
     "ActivityHabits": null
 }
 ```
+
+## Start Client
+Install Docker, increase memory to 6GB.
+
+Then:
+
+``` docker build -t rz-insurancedashboard . ```
+
+``` docker-compose up -d ```
+
+``` docker logs rz-insurancedashboard-dev ``` to check logs
+
+``` docker stop rz-insurancedashboard-dev ``` to stop container

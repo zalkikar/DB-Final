@@ -4,7 +4,7 @@ Final Project for CSCI-GA.2433 Database Systems at NYU
 ## Demo of Insurance Quote Dashboard
 ![Alt text](chat_demo.gif)
 
-## Start server
+## Start Rust server
 ``` cargo build ```
 ``` cargo run ```
 

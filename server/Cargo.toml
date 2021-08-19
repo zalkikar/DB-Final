@@ -1,0 +1,25 @@
+[package]
+name = "insuranceapi"
+version = "0.1.0"
+authors = ["RahulZalkikar <rayzck9@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+path = "src/main.rs"
+name = "insuranceapi"
+
+[dependencies]
+actix-web = "3"
+actix-rt = "1.1.1"
+config = { version = "0.10.1", features = ["yaml"] }
+sqlx = { version = "0.3.5", features = ["sqlite"] }
+#chrono = { version = "0.4.10", features = ["serde"] }
+uuid = { version = "0.8.1", features = ["serde", "v4"] }
+serde = "1.0.117"
+serde_json = "1.0"
+log = "0.4.8"
+env_logger = "0.9"

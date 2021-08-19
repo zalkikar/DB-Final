@@ -1,0 +1,21 @@
+version: "2.4"
+services:
+  nhlbetting-dashboard-dev:
+    image: rz-insurancedashboard
+    container_name: rz-insurancedashboard-dev
+    #runtime: nvidia
+    #environment:
+    #  NVIDIA_VISIBLE_DEVICES: 0 # 0 # This is the GP index on the Host
+    #  CUDA_VISIBLE_DEVICES: 0   # This is used internally in the Container for some frameworks
+    volumes:
+      - $PWD/app:/app
+    ports:
+      - 33331:8050 # port forwarding to 33331
+    network_mode: "bridge"
+    tty: True
+    working_dir: /app
+    #command: /bin/bash
+    # command: uvicorn main:app --host 0.0.0.0 --port 8888  # serving model
+    #web: gunicorn app:server --workers 1 --timeout 180
+    #command: uvicorn index:app --workers 1 --timeout 180 --reload --host 0.0.0.0 --port 8051  # debuggin
+    #command: gunicorn index:server --workers 1 --timeout 180

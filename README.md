@@ -3,6 +3,7 @@ Final Project for CSCI-GA.2433 Database Systems at NYU
 
 ## Models
 1 - epoch model can be found here: https://drive.google.com/drive/folders/1Dbpe3yf2vn1Ig3pNhfkR_SnDVUD4Fnw3?usp=sharing
+
 drop /saved_models in /client/app
 
 ## Demo of Insurance Quote Dashboard
